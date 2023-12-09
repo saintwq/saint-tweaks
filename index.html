@@ -21,7 +21,7 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
-            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transition: top 0.3s ease-in-out, left 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         #glowButton:hover {
@@ -31,7 +31,6 @@
 
         body {
             max-width: 100%;
-            height: 100vh;
             margin: 0;
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -67,14 +66,14 @@
             font-weight: 700;
             font-size: 40px;
             line-height: 48px;
-            margin-top: 30vh; /* Ajustado para garantir que o título esteja no meio da tela */
+            margin-top: 30vh;
         }
 
         h1.category {
             font-weight: 200;
             font-size: 18px;
             line-height: 24px;
-            margin-bottom: 20vh; /* Ajustado para garantir que a categoria esteja no meio da tela */
+            margin-bottom: 20vh;
         }
 
         @media only screen and (max-width: 767px) {
@@ -100,7 +99,7 @@
 <body>
     <!-- Seu conteúdo HTML aqui -->
     <h1 class="title">Tweakloadly</h1>
-    <h1 class="category">Bem vindo ao Tweakloadly! Tweakloadly possibilita instalar tweaks sem jailbreak no iOS 14-16.</h1>
+    <h1 class="category">Instale Tweaks diretamente no iOS sem jailbreak.</h1>
 
     <!-- Botão Glow -->
     <button id="glowButton">Direct Install</button>
