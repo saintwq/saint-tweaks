@@ -40,7 +40,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            animation: fadeInAnimation 3s; /* Removido linear e animation-fill-mode */
+            background-attachment: fixed; /* Adicionado para fixar o background */
+            animation: fadeInAnimation 3s;
             overflow-x: hidden;
         }
 
@@ -64,44 +65,34 @@
 
         h1.title {
             font-weight: 700;
-            font-size: 30px;
-            line-height: 37px;
-        }
-
-        h1.subtitle {
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 21px;
+            font-size: 40px;
+            line-height: 48px;
+            margin-top: 30vh; /* Ajustado para garantir que o título esteja no meio da tela */
         }
 
         h1.category {
-           font-weight: 200;
-            font-size: 30px;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20vh; /* Ajustado para garantir que a categoria esteja no meio da tela */
         }
 
-        h1.status {
-            font-weight: 400;
-            font-size: 13px;
-        }
-
-        @media only screen and (max-width: 9999px) {
+        @media only screen and (max-width: 767px) {
             h1.title {
-                font-size: 50.5050505050px;
-                line-height: 33.6363636364px;
-            }
-
-            h1.subtitle {
-                font-size: 40.4040404040px;
-                line-height: 19.0909090909px;
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 20vh;
             }
 
             h1.category {
-                font-size: 25.5050505050px;
-                
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10vh;
             }
 
-            h1.status {
-                font-size: 11.8181818182px;
+            #glowButton {
+                font-size: 16px;
+                padding: 10px 20px;
             }
         }
     </style>
