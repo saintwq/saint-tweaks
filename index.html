@@ -9,7 +9,7 @@
             background-color: #000;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
@@ -22,6 +22,12 @@
             margin-bottom: 20px;
         }
 
+        #buttonContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         button {
             padding: 15px 30px;
             font-size: 18px;
@@ -32,7 +38,6 @@
             cursor: pointer;
             outline: none;
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            align-self: center;
         }
 
         button:hover {
@@ -47,7 +52,9 @@
         Bem-vindo ao Meu Site!
     </div>
 
-    <button>Get Started</button>
+    <div id="buttonContainer">
+        <button>Get Started</button>
+    </div>
 
 </body>
 </html>
