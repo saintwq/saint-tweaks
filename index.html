@@ -14,22 +14,6 @@
             margin: 0;
         }
 
-        #glassSquare {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            width: 200px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.2); /* Cor do quadrado com transparência */
-            border-radius: 10px;
-            backdrop-filter: blur(10px); /* Efeito de vidro com desfoque */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
         button {
             padding: 15px 30px;
             font-size: 18px;
@@ -39,6 +23,8 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
+            position: relative;
+            overflow: hidden;
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
@@ -50,12 +36,7 @@
 </head>
 <body>
 
-    <div id="glassSquare">
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-    </div>
-
+    <button>Get Started</button>
     <button>Get Started</button>
 
 </body>
