@@ -36,21 +36,12 @@
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             color: white;
-            position: relative;
+            background-image: url('https://raw.githubusercontent.com/saintwq/saint-tweaks/main/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: fadeInAnimation 3s; /* Removido linear e animation-fill-mode */
             overflow-x: hidden;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000; /* Definido para preto */
-            opacity: 0; /* Inicialmente transparente */
-            z-index: -1;
-            animation: fadeInBackground 3s forwards; /* Adicionada animação de fadeInBackground */
         }
 
         html {
@@ -62,7 +53,7 @@
             text-decoration: none;
         }
 
-        @keyframes fadeInBackground {
+        @keyframes fadeInAnimation {
             from {
                 opacity: 0;
             }
@@ -122,6 +113,7 @@
     <h1 class="status">Status</h1>
 
     <!-- Botão Glow -->
-    <button id="glowButton">Install</button>
+    <button id="glowButton">Direct Install</button>
 </body>
 </html>
+
