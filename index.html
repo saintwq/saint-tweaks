@@ -14,11 +14,6 @@
             margin: 0;
         }
 
-        #buttonContainer {
-            display: flex;
-            gap: 20px; /* Espaçamento entre os botões */
-        }
-
         button {
             padding: 15px 30px;
             font-size: 18px;
@@ -28,6 +23,8 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
+            position: relative;
+            overflow: hidden;
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
@@ -38,11 +35,6 @@
     </style>
 </head>
 <body>
-
-    <div id="buttonContainer">
-        <button>Button 1</button>
-        <button>Button 2</button>
-    </div>
 
     <button>Get Started</button>
 
