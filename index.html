@@ -24,10 +24,20 @@
             font-family: 'IosBold', sans-serif;
         }
 
-        #headerText {
-            font-size: 24px;
+        .customText {
+            font-size: 20px;
             color: #fff;
-            margin-bottom: 20px;
+            position: absolute; /* Permite posicionar o texto em qualquer lugar da tela */
+        }
+
+        #headerText {
+            top: 10px; /* Distância do topo em pixels */
+            left: 10px; /* Distância da esquerda em pixels */
+        }
+
+        #additionalText {
+            bottom: 10px; /* Distância do fundo em pixels */
+            right: 10px; /* Distância da direita em pixels */
         }
 
         #buttonContainer {
@@ -57,16 +67,18 @@
 </head>
 <body>
 
-    <div id="headerText">
-        Saint Tweak Manager
+    <div id="headerText" class="customText">
+        Bem-vindo ao Meu Site!
     </div>
 
     <div id="buttonContainer">
-        <button>Download</button>
+        <button>Get Started</button>
     </div>
 
-</body>
-</html>
+    <div id="additionalText" class="customText">
+        Outro texto flexível
+    </div>
+
 </body>
 </html>
 
