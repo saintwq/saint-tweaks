@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Página</title>
-     <link rel="stylesheet" href="https://raw.githubusercontent.com/saintwq/saint-tweaks/main/style.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/saintwq/saint-tweaks/main/style.css">
     <style>
-
-
+        /* Adicione estilos adicionais aqui se necessário */
         
-           #glowButton {
+        #glowButton {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -29,22 +28,26 @@
             background-color: #cc0000;
             box-shadow: 0 0 20px 5px #ff0000;
         }
+
         body {
-            max-width: 100%; /* stop horizontal scroll */
+            max-width: 100%;
             height: auto !important;
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             color: white;
-            background-color: black;
+            background-image: url('https://raw.githubusercontent.com/saintwq/saint-tweaks/main/background.png'); /* Substitua pelo caminho real da sua imagem de fundo */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             animation: fadeInAnimation linear 3s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
-            overflow-x: hidden; /* stop horizontal scroll */
+            overflow-x: hidden;
             height: auto !important;
         }
 
         html {
-            overflow-x: hidden; /* stop horizontal scroll */
+            overflow-x: hidden;
             height: auto !important;
         }
 
@@ -84,7 +87,7 @@
             font-size: 13px;
         }
 
-        @media only screen and (max-width: 667px) { /* original / 1.1 */
+        @media only screen and (max-width: 667px) {
             h1.title {
                 font-size: 27.2727272727px;
                 line-height: 33.6363636364px;
@@ -106,85 +109,13 @@
     </style>
 </head>
 <body>
-   <button id="glowButton">Get Started</button>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <style>
-        @font-face {
-            font-family: 'IosBold';
-            src: url('iosbold.ttf') format('truetype');
-            font-weight: bold;
-            font-style: normal;
-        }
+    <!-- Seu conteúdo HTML aqui -->
+    <h1 class="title">Título</h1>
+    <h1 class="subtitle">Subtítulo</h1>
+    <h1 class="category">Categoria</h1>
+    <h1 class="status">Status</h1>
 
-        body {
-            background-color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            font-family: 'IosBold', sans-serif;
-        }
-
-        .customText {
-            font-size: 20px;
-            color: #fff;
-            position: absolute; /* Permite posicionar o texto em qualquer lugar da tela */
-        }
-
-        #headerText {
-            top: 10px; /* Distância do topo em pixels */
-            left: 10px; /* Distância da esquerda em pixels */
-        }
-
-        #additionalText {
-            bottom: 10px; /* Distância do fundo em pixels */
-            right: 10px; /* Distância da direita em pixels */
-        }
-
-      
-
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #ff0000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            outline: none;
-            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            font-family: 'IosBold', sans-serif;
-        }
-
-        button:hover {
-            background-color: #cc0000;
-            box-shadow: 0 0 20px 5px #ff0000;
-        }
-    </style>
-</head>
-<body>
-
-    <div id="headerText" class="customText">
-        Bem-vindo ao Meu Site!
-    </div>
-
-    
-
-    <div id="additionalText" class="customText">
-        Outro texto flexível
-    </div>
-
+    <!-- Botão Glow -->
+    <button id="glowButton">Install</button>
 </body>
 </html>
-</body>
-</html>
-
-</body>
-</html>
-
