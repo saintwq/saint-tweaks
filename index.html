@@ -106,7 +106,7 @@
         window.addEventListener('scroll', function() {
             var button = document.getElementById('glowButton');
             var offset = window.scrollY;
-            button.style.top = 50 + offset * 0.5 + '%';
+            button.style.top = (50 - offset * 0.5) + '%';
         });
     </script>
 </body>
