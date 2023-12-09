@@ -38,6 +38,7 @@
             color: white;
             position: relative;
             overflow-x: hidden;
+            animation: fadeInContent 3s; /* Adicionada animação de fadeIn para todos os elementos */
         }
 
         body::before {
@@ -52,7 +53,6 @@
             background-size: cover;
             background-position: center;
             z-index: -1;
-            animation: fadeInAnimation 3s;
         }
 
         html {
@@ -64,7 +64,7 @@
             text-decoration: none;
         }
 
-        @keyframes fadeInAnimation {
+        @keyframes fadeInContent {
             from {
                 opacity: 0;
             }
@@ -127,3 +127,4 @@
     <button id="glowButton">Install</button>
 </body>
 </html>
+
