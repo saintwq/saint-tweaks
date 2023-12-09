@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,8 +40,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Adicionado para fixar o background */
-            animation: fadeInAnimation 3s;
+            animation: fadeInAnimation 3s; /* Removido linear e animation-fill-mode */
             overflow-x: hidden;
         }
 
@@ -65,34 +64,44 @@
 
         h1.title {
             font-weight: 700;
-            font-size: 40px;
-            line-height: 48px;
-            margin-top: 30vh; /* Ajustado para garantir que o título esteja no meio da tela */
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+        h1.subtitle {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 21px;
         }
 
         h1.category {
-            font-weight: 200;
-            font-size: 18px;
-            line-height: 24px;
-            margin-bottom: 20vh; /* Ajustado para garantir que a categoria esteja no meio da tela */
+           font-weight: 200;
+            font-size: 30px;
         }
 
-        @media only screen and (max-width: 767px) {
+        h1.status {
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        @media only screen and (max-width: 9999px) {
             h1.title {
-                font-size: 24px;
-                line-height: 30px;
-                margin-top: 20vh;
+                font-size: 50.5050505050px;
+                line-height: 33.6363636364px;
+            }
+
+            h1.subtitle {
+                font-size: 40.4040404040px;
+                line-height: 19.0909090909px;
             }
 
             h1.category {
-                font-size: 16px;
-                line-height: 20px;
-                margin-bottom: 10vh;
+                font-size: 25.5050505050px;
+                
             }
 
-            #glowButton {
-                font-size: 16px;
-                padding: 10px 20px;
+            h1.status {
+                font-size: 11.8181818182px;
             }
         }
     </style>
@@ -106,110 +115,6 @@
     <button id="glowButton">Direct Install</button>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Página</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/saintwq/saint-tweaks/main/style.css">
-    <style>
-        /* Adicione estilos adicionais aqui se necessário */
-        
-        #glowButton {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #ff0000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            outline: none;
-            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        #glowButton:hover {
-            background-color: #cc0000;
-            box-shadow: 0 0 20px 5px #ff0000;
-        }
-
-        body {
-            max-width: 100%;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            color: white;
-            background-image: url('https://raw.githubusercontent.com/saintwq/saint-tweaks/main/background.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Adicionado para fixar o background */
-            animation: fadeInAnimation 3s;
-            overflow-x: hidden;
-        }
-
-        html {
-            overflow-x: hidden;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        @keyframes fadeInAnimation {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        h1.title {
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 48px;
-            margin-top: 30vh; /* Ajustado para garantir que o título esteja no meio da tela */
-        }
-
-        h1.category {
-            font-weight: 200;
-            font-size: 18px;
-            line-height: 24px;
-            margin-bottom: 20vh; /* Ajustado para garantir que a categoria esteja no meio da tela */
-        }
-
-        @media only screen and (max-width: 767px) {
-            h1.title {
-                font-size: 24px;
-                line-height: 30px;
-                margin-top: 20vh;
-            }
-
-            h1.category {
-                font-size: 16px;
-                line-height: 20px;
-                margin-bottom: 10vh;
-            }
-
-            #glowButton {
-                font-size: 16px;
-                padding: 10px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Seu conteúdo HTML aqui -->
-    <h1 class="title">Tweakloadly</h1>
-    <h1 class="category">Instale Tweaks diretamente no iOS sem jailbreak.</h1>
-
     <!-- Botão Glow -->
     <button id="glowButton">Direct Install</button>
 </body>
