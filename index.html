@@ -8,10 +8,23 @@
         body {
             background-color: #000;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
             height: 100vh;
             margin: 0;
+            padding: 20px;
+        }
+
+        #headerText {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #buttonContainer {
+            display: flex;
+            gap: 20px; /* Espaçamento entre os botões */
         }
 
         button {
@@ -23,8 +36,6 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
-            position: relative;
-            overflow: hidden;
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
@@ -36,8 +47,16 @@
 </head>
 <body>
 
+    <div id="headerText">
+        Bem-vindo ao Meu Site!
+    </div>
+
+    <div id="buttonContainer">
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div>
+
     <button>Get Started</button>
 
 </body>
 </html>
-
