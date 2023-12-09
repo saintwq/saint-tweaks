@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <style>
-        body {
-            background-color: #000;
+   #glassSquare {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.2); /* Cor do quadrado com transparência */
+            border-radius: 10px;
+            backdrop-filter: blur(10px); /* Efeito de vidro com desfoque */
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            justify-content: space-around;
+            padding: 20px;
         }
 
         button {
@@ -23,18 +23,22 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
-            position: relative;
-            overflow: hidden;
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         button:hover {
-            background-color:  #ff0000; /* Cor mais escura ao passar o mouse */
+            background-color: #cc0000; /* Cor mais escura ao passar o mouse */
             box-shadow: 0 0 20px 5px #ff0000; /* Adiciona um efeito de brilho (glow) */
         }
     </style>
 </head>
 <body>
+
+    <div id="glassSquare">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+    </div>
 
     <button>Get Started</button>
 
