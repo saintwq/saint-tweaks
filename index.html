@@ -6,6 +6,25 @@
     <title>Sua Página</title>
      <link rel="stylesheet" href="https://raw.githubusercontent.com/saintwq/saint-tweaks/main/style.css">
     <style>
+
+
+        
+        #glowButton {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff0000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        #glowButton:hover {
+            background-color: #cc0000;
+            box-shadow: 0 0 20px 5px #ff0000;
+        }
         body {
             max-width: 100%; /* stop horizontal scroll */
             height: auto !important;
@@ -83,11 +102,7 @@
     </style>
 </head>
 <body>
-    <!-- Seu conteúdo HTML aqui -->
-    <h1 class="title">Título</h1>
-    <h1 class="subtitle">Subtítulo</h1>
-    <h1 class="category">Categoria</h1>
-    <h1 class="status">Status</h1>
+   <button id="glowButton">Get Started</button>
 </body>
 </html>
 
