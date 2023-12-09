@@ -40,9 +40,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            animation: fadeInAnimation linear 3s; /* Adicionada a animação de fadeIn ao body */
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
+            animation: fadeInAnimation 3s; /* Removido linear e animation-fill-mode */
             overflow-x: hidden;
         }
 
@@ -56,10 +54,10 @@
         }
 
         @keyframes fadeInAnimation {
-            0% {
+            from {
                 opacity: 0;
             }
-            100% {
+            to {
                 opacity: 1;
             }
         }
