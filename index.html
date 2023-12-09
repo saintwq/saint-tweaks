@@ -10,9 +10,6 @@
         
         #glowButton {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             padding: 15px 30px;
             font-size: 18px;
             color: #fff;
@@ -21,7 +18,7 @@
             border-radius: 5px;
             cursor: pointer;
             outline: none;
-            transition: top 0.3s ease-in-out, left 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         #glowButton:hover {
@@ -103,5 +100,14 @@
 
     <!-- Botão Glow -->
     <button id="glowButton">Direct Install</button>
+
+    <script>
+        // Adiciona um evento de rolagem para controlar a posição do botão
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('glowButton');
+            var offset = window.scrollY;
+            button.style.top = 50 + offset * 0.5 + '%';
+        });
+    </script>
 </body>
 </html>
