@@ -40,7 +40,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            animation: fadeInAnimation 3s; /* Removido linear e animation-fill-mode */
+            animation: fadeInAnimation 3s;
             overflow-x: hidden;
         }
 
@@ -75,7 +75,7 @@
         }
 
         h1.category {
-           font-weight: 200;
+            font-weight: 200;
             font-size: 30px;
         }
 
@@ -97,12 +97,43 @@
 
             h1.category {
                 font-size: 25.5050505050px;
-                
             }
 
             h1.status {
                 font-size: 11.8181818182px;
             }
+        }
+
+        /* Adicione estilos específicos para dispositivos móveis aqui */
+        @media only screen and (max-width: 767px) {
+            body {
+                height: auto; /* Para permitir rolar o conteúdo em dispositivos móveis */
+            }
+
+            /* Defina a cor da barra de status no iOS */
+            /* Pode variar dependendo da versão do iOS */
+            /* Adapte conforme necessário */
+            @supports (-webkit-appearance:none) {
+                /* iOS 15 e superior */
+                /* Cor da barra de status e tamanho da área ocupada */
+                env(safe-area-inset-top: 20px) {
+                    body {
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            @media not all and (min-resolution:.001dpcm) {
+                /* iOS 14 e inferior */
+                /* Cor da barra de status e tamanho da área ocupada */
+                body {
+                    padding-top: constant(safe-area-inset-top);
+                    padding-top: env(safe-area-inset-top);
+                }
+            }
+
+            /* No Android, você pode tentar definir a cor de fundo da barra de status usando meta tag no head */
+            /* <meta name="theme-color" content="#000000"> */
         }
     </style>
 </head>
@@ -111,10 +142,6 @@
     <h1 class="title">Tweakloadly</h1>
     <h1 class="category">Instale Tweaks diretamente no iOS sem jailbreak.</h1>
 
-    <!-- Botão Glow -->
-    <button id="glowButton">Direct Install</button>
-</body>
-</html>
     <!-- Botão Glow -->
     <button id="glowButton">Direct Install</button>
 </body>
